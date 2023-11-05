@@ -1,13 +1,20 @@
 function skillMembers() {
-  var members = [
-    { name: 'Tom', skills: ['JavaScript', 'CSS', 'HTML'] },
-    { name: 'Bob', skills: ['JavaScript', 'CSS'] },
-    { name: 'Alice', skills: ['JavaScript', 'HTML'] }
-  ];
+    var members = [];
+    var member = {
+        name: 'jake',
+        age: 25,
+        skills: ['js', 'css', 'html']
+    };
 
-  var result = members.filter(function (member) {
-    return member.skills.includes('JavaScript');
-  });
+    members.push(member);
 
-  console.log(result);
+    member = {
+        name: 'jane',
+        age: 22,
+        skills: ['js', 'css', 'html']
+    };
+
+    members.push(member);
+
+    return members;
 }
